@@ -16,11 +16,11 @@ from PIL import Image
 
 import cv2
 
-arduino = serial.Serial('COM7', 9600, timeout=0) #to be changed
+arduino = serial.Serial('COM7', 9600, timeout=0)
 
 # model = torch.hub.load('C:/yolov5-master', 'custom', path=r'C:\Users\user\Desktop\valorant_hack_inprogress\best.pt', source='local', force_reload=True) # to be changed
 
-model = torch.hub.load(r'C:\Users\user\Desktop\valorant_aim_assist\yolov5-master',
+model = torch.hub.load(r'.\yolov5-master',
                        'custom', path=r'C:\Users\user\Desktop\valorant_aim_assist\best.pt',
                        source='local', force_reload=True) # to be changed
 
@@ -33,8 +33,8 @@ print("now using cuda")
 
 index = 0 # use to label the images
 
-head_body_ratio_normal = 0.89  # to be changed represent the increase in y location of the cursor to ensure it hits the body not the legs
-head_body_ratio_bulldog = 0.85
+head_body_ratio_normal = 0.89  # to be changed represent the increase in y location of the cursor to ensure it hits the head
+head_body_ratio_bulldog = 0.85 # for using bulldog
 head_body_ratio_used = head_body_ratio_normal
 
 
@@ -174,30 +174,8 @@ with mss.mss() as sct:
 
                 print(data)
 
-                # storing the output results as jpg images
+                # storing the output results as jpg images (optional)
 
-                cv2.rectangle(results.imgs[0], (int(x1), int(y1)), (int(x2), int(y2)), (255,255,255), 2)
+                cv2.rectangle(results.imgs[0], tuple(int([x1, y1])), tuple(int([x2, y2])), (255,255,255), 2)
                 im = Image.fromarray(results.imgs[0])
                 im.save(f".\\outputs\\{index}.jpg")
-
-
-
-                # DISPLAYING DATA
-
-        # will make in the future 
-
-        # TESTING
-
-        # Display the picture
-
-        # results.display(render=True)
-
-        # cv2.imshow('', results.imgs[0])
-
-        # Press "q" to quit
-
-        # if cv2.waitKey(1) & 0xFF == ord("q"):
-
-        # cv2.destroyAllWindows()
-
-        # sct.close()
