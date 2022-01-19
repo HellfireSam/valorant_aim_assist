@@ -33,3 +33,7 @@ How to use:
 1: plug in the Arduino Leonardo board with host shield connected to a mouse or its receiver (some mouse may not be compatible)
 2: activate the environment that is installed above and run "python path\model_final.py"
 3: The program is now running
+
+
+
+Reference: https://github.com/ultralytics/yolov5 https://www.youtube.com/watch?v=StH5YNrY0mE https://www.youtube.com/watch?v=K8qs9GlE4UQ https://www.unknowncheats.me/forum/valorant/467372-valorant-cheat-arduino-yolov5-ai.html https://www.youtube.com/watch?v=nBttwvgNOr8
