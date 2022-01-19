@@ -1,6 +1,8 @@
 In order to use the AI, you need an arduino leonardo board with a host shield 
 
 The weighting of the program is already pre-trained, if you prefer using your own trained model, you may replace it with the best.pt file
+- remember to replace the coco128.yaml file with your file (name it the same as the coco128.yaml file or change the path in C:\Users\user\Desktop\valorant_aim_assist\yolov5-master\detect.py line 53)
+- please make sure that the first label represents the enemy coordinates
 
 the model_final.py (You may modify some of the contents)
 -line 19 stores the port for the arduino leonardo board which can be checked with the arduino ide; the baud rate can also be customized (default is 9600)
