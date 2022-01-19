@@ -36,4 +36,4 @@ How to use:
 
 
 
-Reference: https://github.com/ultralytics/yolov5 https://www.youtube.com/watch?v=StH5YNrY0mE https://www.youtube.com/watch?v=K8qs9GlE4UQ https://www.unknowncheats.me/forum/valorant/467372-valorant-cheat-arduino-yolov5-ai.html https://www.youtube.com/watch?v=nBttwvgNOr8
+Reference: https://github.com/ultralytics/yolov5 https://www.youtube.com/watch?v=StH5YNrY0mE https://www.youtube.com/watch?v=K8qs9GlE4UQ https://www.unknowncheats.me/forum/valorant/467372-valorant-cheat-arduino-yolov5-ai.html https://www.youtube.com/watch?v=nBttwvgNOr8 https://github.com/ultralytics/yolov5/issues/36
